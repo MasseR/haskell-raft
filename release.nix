@@ -19,6 +19,7 @@ rec {
       ghcid
       hlint
       stylish-haskell
+      cabal-install
       (ghcWithPackages (h: haskell-raft.buildInputs ++ haskell-raft.propagatedBuildInputs))
     ];
   };
