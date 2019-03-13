@@ -14,7 +14,7 @@ rec {
   haskell-raft = haskellPackages.callPackage ./default.nix {};
   haskell-raft-shell = buildEnv {
     name = "shell";
-    paths = [haskell-raft];
+    paths = [];
     buildInputs = with haskellPackages; [
       ghcid
       hlint
